@@ -32,6 +32,9 @@
             this.lblResult = new System.Windows.Forms.Label();
             this.btnQ1 = new System.Windows.Forms.Button();
             this.btnQ3 = new System.Windows.Forms.Button();
+            this.txtQuestion1 = new System.Windows.Forms.TextBox();
+            this.txtQuestion3 = new System.Windows.Forms.TextBox();
+            this.lblQuestion1 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // btnQ2
@@ -67,18 +70,45 @@
             // 
             // btnQ3
             // 
-            this.btnQ3.Location = new System.Drawing.Point(175, 43);
+            this.btnQ3.Location = new System.Drawing.Point(227, 43);
             this.btnQ3.Name = "btnQ3";
             this.btnQ3.Size = new System.Drawing.Size(75, 23);
             this.btnQ3.TabIndex = 3;
             this.btnQ3.Text = "Question 3";
             this.btnQ3.UseVisualStyleBackColor = true;
             // 
+            // txtQuestion1
+            // 
+            this.txtQuestion1.Location = new System.Drawing.Point(40, 72);
+            this.txtQuestion1.Name = "txtQuestion1";
+            this.txtQuestion1.Size = new System.Drawing.Size(100, 20);
+            this.txtQuestion1.TabIndex = 4;
+            // 
+            // txtQuestion3
+            // 
+            this.txtQuestion3.Location = new System.Drawing.Point(227, 72);
+            this.txtQuestion3.Name = "txtQuestion3";
+            this.txtQuestion3.Size = new System.Drawing.Size(75, 20);
+            this.txtQuestion3.TabIndex = 6;
+            // 
+            // lblQuestion1
+            // 
+            this.lblQuestion1.AutoSize = true;
+            this.lblQuestion1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblQuestion1.Location = new System.Drawing.Point(23, 95);
+            this.lblQuestion1.Name = "lblQuestion1";
+            this.lblQuestion1.Size = new System.Drawing.Size(132, 20);
+            this.lblQuestion1.TabIndex = 7;
+            this.lblQuestion1.Text = "Question 1 or 2";
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(678, 495);
+            this.Controls.Add(this.lblQuestion1);
+            this.Controls.Add(this.txtQuestion3);
+            this.Controls.Add(this.txtQuestion1);
             this.Controls.Add(this.btnQ3);
             this.Controls.Add(this.btnQ1);
             this.Controls.Add(this.lblResult);
@@ -96,6 +126,9 @@
         private System.Windows.Forms.Label lblResult;
         private System.Windows.Forms.Button btnQ1;
         private System.Windows.Forms.Button btnQ3;
+        private System.Windows.Forms.TextBox txtQuestion1;
+        private System.Windows.Forms.TextBox txtQuestion3;
+        private System.Windows.Forms.Label lblQuestion1;
     }
 }
 

@@ -20,7 +20,7 @@ namespace Recursion_Problem_Set
         private void btnQuestion1a_Click(object sender, EventArgs e)
         {
             lblResult.Text = "Result: ";
-            lblResult.Text += Repeat('X', 10);
+            lblResult.Text += Repeat(Char.Parse(txtQuestion1.Text), 10);
             
 
         }
@@ -32,8 +32,10 @@ namespace Recursion_Problem_Set
 
         private void btnQ1a_Click(object sender, EventArgs e)
         {
-            char c = 'X';
+            char c = char.Parse(txtQuestion1.Text);
+
             lblResult.Text = "Result: ";
+
             for (int i = 0; i < 10; i++)
             {
                 lblResult.Text += c.ToString();
@@ -45,6 +47,7 @@ namespace Recursion_Problem_Set
 
 
         //methods
+        //question 1 and 2
         public string Repeat(char c, int n)
         {
             //base case
@@ -56,9 +59,16 @@ namespace Recursion_Problem_Set
             }
         }
 
+        //question 3
         public string Expand(string Word)
         {
-            return null;
+            //base case
+            if(Word.Length == 1) return Word;
+            else
+            {
+                //Word2 = Word
+                return null;
+            }
 
         }
     }
