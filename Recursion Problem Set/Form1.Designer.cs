@@ -34,7 +34,13 @@
             this.btnQ3 = new System.Windows.Forms.Button();
             this.txtQuestion1 = new System.Windows.Forms.TextBox();
             this.txtQuestion3 = new System.Windows.Forms.TextBox();
-            this.lblQuestion1 = new System.Windows.Forms.Label();
+            this.btnQuestion4 = new System.Windows.Forms.Button();
+            this.txtQuestion4 = new System.Windows.Forms.TextBox();
+            this.btnQuestion5 = new System.Windows.Forms.Button();
+            this.btnQuestion6 = new System.Windows.Forms.Button();
+            this.txtQuestion5 = new System.Windows.Forms.TextBox();
+            this.txtQuestion6b = new System.Windows.Forms.TextBox();
+            this.txtQuestion6a = new System.Windows.Forms.TextBox();
             this.SuspendLayout();
             // 
             // btnQ2
@@ -76,6 +82,7 @@
             this.btnQ3.TabIndex = 3;
             this.btnQ3.Text = "Question 3";
             this.btnQ3.UseVisualStyleBackColor = true;
+            this.btnQ3.Click += new System.EventHandler(this.btnQ3_Click);
             // 
             // txtQuestion1
             // 
@@ -90,23 +97,78 @@
             this.txtQuestion3.Name = "txtQuestion3";
             this.txtQuestion3.Size = new System.Drawing.Size(75, 20);
             this.txtQuestion3.TabIndex = 6;
+            this.txtQuestion3.TextChanged += new System.EventHandler(this.txtQuestion3_TextChanged);
             // 
-            // lblQuestion1
+            // btnQuestion4
             // 
-            this.lblQuestion1.AutoSize = true;
-            this.lblQuestion1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblQuestion1.Location = new System.Drawing.Point(23, 95);
-            this.lblQuestion1.Name = "lblQuestion1";
-            this.lblQuestion1.Size = new System.Drawing.Size(132, 20);
-            this.lblQuestion1.TabIndex = 7;
-            this.lblQuestion1.Text = "Question 1 or 2";
+            this.btnQuestion4.Location = new System.Drawing.Point(337, 43);
+            this.btnQuestion4.Name = "btnQuestion4";
+            this.btnQuestion4.Size = new System.Drawing.Size(80, 22);
+            this.btnQuestion4.TabIndex = 8;
+            this.btnQuestion4.Text = "Question 4";
+            this.btnQuestion4.UseVisualStyleBackColor = true;
+            this.btnQuestion4.Click += new System.EventHandler(this.btnQuestion4_Click);
+            // 
+            // txtQuestion4
+            // 
+            this.txtQuestion4.Location = new System.Drawing.Point(337, 71);
+            this.txtQuestion4.Name = "txtQuestion4";
+            this.txtQuestion4.Size = new System.Drawing.Size(80, 20);
+            this.txtQuestion4.TabIndex = 9;
+            // 
+            // btnQuestion5
+            // 
+            this.btnQuestion5.Location = new System.Drawing.Point(452, 43);
+            this.btnQuestion5.Name = "btnQuestion5";
+            this.btnQuestion5.Size = new System.Drawing.Size(80, 22);
+            this.btnQuestion5.TabIndex = 10;
+            this.btnQuestion5.Text = "Question 5";
+            this.btnQuestion5.UseVisualStyleBackColor = true;
+            this.btnQuestion5.Click += new System.EventHandler(this.btnQuestion5_Click);
+            // 
+            // btnQuestion6
+            // 
+            this.btnQuestion6.Location = new System.Drawing.Point(566, 44);
+            this.btnQuestion6.Name = "btnQuestion6";
+            this.btnQuestion6.Size = new System.Drawing.Size(80, 22);
+            this.btnQuestion6.TabIndex = 11;
+            this.btnQuestion6.Text = "Question 6";
+            this.btnQuestion6.UseVisualStyleBackColor = true;
+            this.btnQuestion6.Click += new System.EventHandler(this.btnQuestion6_Click);
+            // 
+            // txtQuestion5
+            // 
+            this.txtQuestion5.Location = new System.Drawing.Point(452, 71);
+            this.txtQuestion5.Name = "txtQuestion5";
+            this.txtQuestion5.Size = new System.Drawing.Size(80, 20);
+            this.txtQuestion5.TabIndex = 12;
+            // 
+            // txtQuestion6b
+            // 
+            this.txtQuestion6b.Location = new System.Drawing.Point(566, 95);
+            this.txtQuestion6b.Name = "txtQuestion6b";
+            this.txtQuestion6b.Size = new System.Drawing.Size(80, 20);
+            this.txtQuestion6b.TabIndex = 13;
+            // 
+            // txtQuestion6a
+            // 
+            this.txtQuestion6a.Location = new System.Drawing.Point(566, 72);
+            this.txtQuestion6a.Name = "txtQuestion6a";
+            this.txtQuestion6a.Size = new System.Drawing.Size(80, 20);
+            this.txtQuestion6a.TabIndex = 14;
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(678, 495);
-            this.Controls.Add(this.lblQuestion1);
+            this.Controls.Add(this.txtQuestion6a);
+            this.Controls.Add(this.txtQuestion6b);
+            this.Controls.Add(this.txtQuestion5);
+            this.Controls.Add(this.btnQuestion6);
+            this.Controls.Add(this.btnQuestion5);
+            this.Controls.Add(this.txtQuestion4);
+            this.Controls.Add(this.btnQuestion4);
             this.Controls.Add(this.txtQuestion3);
             this.Controls.Add(this.txtQuestion1);
             this.Controls.Add(this.btnQ3);
@@ -128,7 +190,13 @@
         private System.Windows.Forms.Button btnQ3;
         private System.Windows.Forms.TextBox txtQuestion1;
         private System.Windows.Forms.TextBox txtQuestion3;
-        private System.Windows.Forms.Label lblQuestion1;
+        private System.Windows.Forms.Button btnQuestion4;
+        private System.Windows.Forms.TextBox txtQuestion4;
+        private System.Windows.Forms.Button btnQuestion5;
+        private System.Windows.Forms.Button btnQuestion6;
+        private System.Windows.Forms.TextBox txtQuestion5;
+        private System.Windows.Forms.TextBox txtQuestion6b;
+        private System.Windows.Forms.TextBox txtQuestion6a;
     }
 }
 
